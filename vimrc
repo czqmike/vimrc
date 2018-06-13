@@ -19,7 +19,7 @@ syntax on                   " 自动语法高亮
 filetype on                  " 检测文件的类型
 filetype plugin on          " 开启插件检测
 filetype indent off          " 开启检测文件缩进
-" set number                  " 显示行号
+set number                  " 显示行号
 set ruler                   " 显示标尺
 set nocursorline            " 不突出显示当前行
 set shiftwidth=4            " 设定 << 和 >> 命令移动时的宽度为 4
