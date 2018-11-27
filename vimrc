@@ -55,7 +55,7 @@ set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状�
 colorscheme desert       " 设定配色方案
 
 " 清除搜索高亮
-nnoremap <esc> :noh<return><esc>
+" nnoremap <esc> :noh<return><esc>
 
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
