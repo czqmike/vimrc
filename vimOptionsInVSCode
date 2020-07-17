@@ -1,3 +1,4 @@
+    # Append below codes to vimcode->settings.json
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
