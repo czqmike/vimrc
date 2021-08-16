@@ -32,4 +32,5 @@
         "<C-v>": false,
         "<C-w>": false,
         "<C-s>": false,
+        "<C-k>": false,
     }
