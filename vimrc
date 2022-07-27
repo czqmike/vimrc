@@ -43,7 +43,7 @@ set magic                   " 显示括号配对情况
 set hidden                  " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存
 "set autoindent              " 新行自动缩进
 "set smartindent             " 开启新行时使用智能自动缩进
-" set backspace=indent,eol,start
+:set backspace=indent,eol,start
                 " 不设定在插入状态无法用退格键和 Delete 键删除回车符
 set cmdheight=1             " 设定命令行的行数为 1
 set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状态栏)
@@ -52,18 +52,18 @@ set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状�
 " set foldcolumn=0            " 设置折叠区域的宽度
 " setlocal foldlevel=1        " 设置折叠层数为
 " set foldclose=all           " 设置为自动关闭折叠
-colorscheme desert       " 设定配色方案
+colorscheme elflord       " 设定配色方案
 
 " 清除搜索高亮
 " nnoremap <esc> :noh<return><esc>
 
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
-inoremap { {<CR>}<Esc>O
+inoremap { {}<Esc>i
 autocmd Syntax html,vim inoremap < <lt>><Esc>i| inoremap > <c-r>=ClosePair('>')<CR>
 inoremap ) <c-r>=ClosePair(')')<CR>
 inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap } <c-r>=CloseBracket()<CR>
+" inoremap } <c-r>=CloseBracket()<CR>
 inoremap " <c-r>=QuoteDelim('"')<CR>
 inoremap ' <c-r>=QuoteDelim("'")<CR>
 
@@ -97,3 +97,5 @@ function QuoteDelim(char)
       return a:char.a:char."\<Esc>i"
     endif
 endf
+
+:set vb t_vb= " Turn off the noisy bell.
