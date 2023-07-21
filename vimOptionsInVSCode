@@ -1,4 +1,4 @@
-    # Append below codes to vimcode->settings.json
+    // Append below codes to vimcode->settings.json
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -33,5 +33,6 @@
         "<C-w>": false,
         "<C-s>": false,
         "<C-k>": false,
+        "<C-n>": false,
     },
     "vim.foldfix": true,
