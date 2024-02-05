@@ -34,5 +34,6 @@
         "<C-s>": false,
         "<C-k>": false,
         "<C-n>": false,
+        "<C-p>": false,
     },
     "vim.foldfix": true,
