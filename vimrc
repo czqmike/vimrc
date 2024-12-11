@@ -53,6 +53,7 @@ set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状�
 " setlocal foldlevel=1        " 设置折叠层数为
 " set foldclose=all           " 设置为自动关闭折叠
 colorscheme elflord       " 设定配色方案
+set wrapscan		" 设定循环查找
 
 " 清除搜索高亮
 " nnoremap <esc> :noh<return><esc>
